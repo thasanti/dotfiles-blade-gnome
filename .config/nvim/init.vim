@@ -26,6 +26,9 @@ Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Git
+Plug 'jreybert/vimagit'
+
 " Additional stuff
 Plug 'mhinz/vim-rfc'
 Plug 'sainnhe/gruvbox-material'
@@ -40,7 +43,7 @@ filetype plugin on
 syntax on
 colorscheme gruvbox-material
 
-set relativenumber
+set number
 
 set smarttab
 set cindent
@@ -65,6 +68,9 @@ map <leader>l <C-W>l
 
 set wildmode=longest,list,full
 
+
+" compile with <leader>c
+autocmd FileType go map <leader>c :GoRun<CR>
 
 " ================ AIRLINE =================
 call airline#parts#define_function('ALE', 'ALEGetStatusLine')
