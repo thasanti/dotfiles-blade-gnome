@@ -30,8 +30,6 @@ alias config='git --git-dir $HOME/.cfg/ --work-tree=$HOME'
 # add zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export TERM="xterm"
-
 echo $(hostname) | figlet
 neofetch
 
