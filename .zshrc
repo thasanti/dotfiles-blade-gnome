@@ -1,9 +1,7 @@
-export ZSH="/home/santi/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
-
 HIST_STAMPS="dd.mm.yyyy"
-
 plugins=(
   git
   docker
@@ -14,7 +12,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
 #without this, zsh is somehow broken
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -27,7 +24,7 @@ alias vim=nvim
 
 source ~/.zshsecrets
 
-# config alias
+# dotfile-config alias
 alias config='git --git-dir $HOME/.cfg/ --work-tree=$HOME'
 
 # add zsh syntax highlighting
