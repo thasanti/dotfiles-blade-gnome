@@ -32,6 +32,8 @@ Plug 'jreybert/vimagit'
 " Additional stuff
 Plug 'mhinz/vim-rfc'
 Plug 'sainnhe/gruvbox-material'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'Yavor-Ivanov/airline-monokai-subtle'
 call plug#end()
 
 " Defaults
@@ -41,7 +43,7 @@ set encoding=UTF-8
 set termguicolors
 filetype plugin on
 syntax on
-colorscheme gruvbox-material
+colorscheme monokai_pro
 
 set number
 
@@ -76,7 +78,7 @@ autocmd FileType go map <leader>c :GoRun<CR>
 call airline#parts#define_function('ALE', 'ALEGetStatusLine')
 call airline#parts#define_condition('ALE', 'exists("*ALEGetStatusLine")')
 let g:airline_section_error = airline#section#create_right(['ALE'])
-let g:airline_theme='gruvbox_material'
+let g:airline_theme='monokai_subtle'
 let g:airline#extensions#tabline#enabled = 1
 
 
